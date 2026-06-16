@@ -11,12 +11,11 @@ if (!apiKey) {
   throw new Error("GRADIENT_LABS_API_KEY environment variable is required");
 }
 
-const agentId = process.env.GL_BACK_OFFICE_AGENT_ID ?? "";
-if (!agentId) {
-  throw new Error("GL_BACK_OFFICE_AGENT_ID environment variable is required");
-}
-
 const client = new GradientLabs({ apiKey });
+
+// The ID of the back-office agent to run the task against, e.g. "boagent_12345".
+// Replace with one of your configured agents.
+const agentId = "boagent_12345";
 
 async function main(): Promise<void> {
   const id = `example-task-${Date.now()}`;
