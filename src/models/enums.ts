@@ -2,8 +2,7 @@
 // an open union type (`| (string & {})`) so that a future server-side value
 // never breaks a consumer at compile time while retaining autocomplete.
 //
-// Values are sourced verbatim from the wearegradient Go source — see
-// nodejs_CLIENT_PLAN.md §2 for the per-enum source file.
+// Values are sourced verbatim from the wearegradient Go source.
 
 export const ArticleStatus = {
   Draft: "draft",
