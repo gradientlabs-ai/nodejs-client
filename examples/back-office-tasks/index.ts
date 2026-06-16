@@ -2,7 +2,7 @@
  * Back-office tasks example: creates a back-office task and reads its status.
  * Requires an Integration API key and a configured back-office agent.
  *
- * In your own project: import { GradientLabs } from "@gradient-labs/client";
+ * In your own project: import { GradientLabs } from "@gradientlabs/client";
  */
 import { GradientLabs } from "../../src/index.js";
 

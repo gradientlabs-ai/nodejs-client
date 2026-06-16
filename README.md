@@ -9,13 +9,13 @@ Requires **Node.js 20** or newer.
 ## Installation
 
 ```bash
-npm install @gradient-labs/client
+npm install @gradientlabs/client
 ```
 
 ## Quick start
 
 ```ts
-import { GradientLabs } from "@gradient-labs/client";
+import { GradientLabs } from "@gradientlabs/client";
 
 const client = new GradientLabs({ apiKey: process.env.GRADIENT_LABS_API_KEY! });
 
@@ -65,7 +65,7 @@ Non-2xx responses throw an `ApiError`; client misconfiguration throws a
 `ConfigurationError`. Both extend `GradientLabsError`.
 
 ```ts
-import { ApiError, ErrorCode } from "@gradient-labs/client";
+import { ApiError, ErrorCode } from "@gradientlabs/client";
 
 try {
   await client.conversations.get("missing");
@@ -104,7 +104,7 @@ incoming requests. Pass the **raw** request body — the signature is computed o
 the exact bytes received.
 
 ```ts
-import { GradientLabs, InvalidWebhookSignatureError } from "@gradient-labs/client";
+import { GradientLabs, InvalidWebhookSignatureError } from "@gradientlabs/client";
 
 const client = new GradientLabs({
   apiKey: process.env.GRADIENT_LABS_API_KEY!,

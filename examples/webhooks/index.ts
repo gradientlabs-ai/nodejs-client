@@ -5,7 +5,7 @@
  * Run it, then point your workspace's webhook URL at http://localhost:3000/.
  *
  * Requires GL_WEBHOOK_SIGNING_KEY (the signing key from your workspace).
- * In your own project: import { GradientLabs } from "@gradient-labs/client";
+ * In your own project: import { GradientLabs } from "@gradientlabs/client";
  */
 import { createServer } from "node:http";
 

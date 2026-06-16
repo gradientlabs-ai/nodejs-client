@@ -3,7 +3,7 @@
  * resource source, infers its schema from example payloads, creates a resource
  * type backed by that source, then cleans both up. Requires a Management API key.
  *
- * In your own project: import { GradientLabs } from "@gradient-labs/client";
+ * In your own project: import { GradientLabs } from "@gradientlabs/client";
  */
 import { GradientLabs } from "../../src/index.js";
 

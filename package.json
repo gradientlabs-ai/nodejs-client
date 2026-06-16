@@ -1,5 +1,5 @@
 {
-  "name": "@gradient-labs/client",
+  "name": "@gradientlabs/client",
   "version": "0.1.0",
   "description": "Official Node.js / TypeScript client for the Gradient Labs API",
   "type": "module",

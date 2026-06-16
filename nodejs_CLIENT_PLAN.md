@@ -8,7 +8,7 @@
 
 | Decision | Choice |
 |----------|--------|
-| Package name | `@gradient-labs/client` (npm) |
+| Package name | `@gradientlabs/client` (npm) |
 | Registry | npm (public) |
 | Repo name | `gradientlabs-ai/nodejs-client` |
 | Language / build | TypeScript → compiled JS, ships `.d.ts`, **dual ESM + CommonJS** |
@@ -241,7 +241,7 @@ from the Go source (paths below), **not** invented:
 Instantiated with a single options object (idiomatic TS; avoids Go's functional-options ceremony):
 
 ```ts
-import { GradientLabs } from "@gradient-labs/client";
+import { GradientLabs } from "@gradientlabs/client";
 
 const client = new GradientLabs({
   apiKey: process.env.GRADIENT_LABS_API_KEY!, // required
@@ -450,7 +450,7 @@ and `node:crypto` cover HTTP, cancellation, and HMAC — no `axios`/`node-fetch`
 **`package.json` essentials:**
 ```jsonc
 {
-  "name": "@gradient-labs/client",
+  "name": "@gradientlabs/client",
   "version": "0.1.0",
   "type": "module",
   "engines": { "node": ">=20" },

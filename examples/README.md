@@ -5,7 +5,7 @@ API key from the `GRADIENT_LABS_API_KEY` environment variable.
 
 > These examples import the client from `../../src` so they run straight from a
 > checkout. In your own project, install the package and import from
-> `@gradient-labs/client` instead.
+> `@gradientlabs/client` instead.
 
 ## Prerequisites
 

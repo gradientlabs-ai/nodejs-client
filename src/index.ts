@@ -1,4 +1,4 @@
-// Public entry point for @gradient-labs/client.
+// Public entry point for @gradientlabs/client.
 
 export { GradientLabs, type GradientLabsConfig } from "./client.js";
 export { type RequestConfig } from "./request-config.js";

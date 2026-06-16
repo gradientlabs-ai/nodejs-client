@@ -3,7 +3,7 @@
  * it back, then finishes it.
  *
  * In your own project, import from the published package:
- *   import { GradientLabs } from "@gradient-labs/client";
+ *   import { GradientLabs } from "@gradientlabs/client";
  */
 import { GradientLabs } from "../../src/index.js";
 

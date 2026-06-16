@@ -2,7 +2,7 @@
  * Tools example: lists existing tools, creates a simple HTTP tool, reads it
  * back, then deletes it. Requires a Management API key.
  *
- * In your own project: import { GradientLabs } from "@gradient-labs/client";
+ * In your own project: import { GradientLabs } from "@gradientlabs/client";
  */
 import { GradientLabs } from "../../src/index.js";
 
