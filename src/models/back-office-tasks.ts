@@ -44,8 +44,10 @@ export interface CreateBackOfficeTaskParams {
   id: string;
   /** Input data for the task; shape depends on the task type. */
   input: Record<string, unknown>;
-  /** Identifies the configurable back-office agent to run the task against. Required. */
+  /** Identifies the agent (`agent_…`) that owns the procedure to run the task against. Required. */
   agent_id: string;
+  /** Identifies the procedure (`proc_…`) within the agent to start the task from. Required. */
+  procedure_id: string;
   /** Optional free-format metadata the agent can read. */
   metadata?: Record<string, string>;
   attachments?: BackOfficeTaskAttachmentInput[];

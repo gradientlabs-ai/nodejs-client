@@ -13,9 +13,11 @@ if (!apiKey) {
 
 const client = new GradientLabs({ apiKey });
 
-// The ID of the back-office agent to run the task against, e.g. "boagent_12345".
-// Replace with one of your configured agents.
-const agentId = "boagent_12345";
+// The ID of the agent that owns the procedure to run the task against, e.g.
+// "agent_12345", and the procedure within it, e.g. "proc_12345". Replace with
+// one of your configured agents and procedures.
+const agentId = "agent_12345";
+const procedureId = "proc_12345";
 
 async function main(): Promise<void> {
   const id = `example-task-${Date.now()}`;
@@ -23,6 +25,7 @@ async function main(): Promise<void> {
   const task = await client.backOfficeTasks.create({
     id,
     agent_id: agentId,
+    procedure_id: procedureId,
     input: { order_id: "order-123", reason: "refund_request" },
     metadata: { source: "nodejs-example" },
   });
