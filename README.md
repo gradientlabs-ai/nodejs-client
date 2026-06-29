@@ -166,13 +166,13 @@ Releases are published to [npm](https://www.npmjs.com/package/@gradientlabs/clie
 **To publish a new version:**
 
 1. Merge all changes into `main`.
-2. Update the version in `package.json`.
-3. Push a version tag:
+2. Update the version in `package.json`, merge that to `main`, and pull locally.
+3. Push a version tag matching the `package.json` version:
    ```sh
    git tag v1.2.3
    git push origin v1.2.3
    ```
-4. The [publish workflow](.github/workflows/publish.yml) runs automatically: it builds the library and publishes it to npm using the tag as the package version.
+4. The [publish workflow](.github/workflows/publish.yml) runs automatically: it verifies the tag matches the `package.json` version, builds the library, and publishes it to npm.
 
 ## Development
 
